@@ -35,6 +35,28 @@
       width: 66.66667%;
     }
 
+    .grid-element.mod-padding{
+      padding: 0px 15px 20px 0px;
+    }
+
+    .bigicon{
+      margin-bottom: 45px;
+    }
+
+    .bigicon-text{
+      text-align: center;
+    }
+
+    .bigicon-icon{
+      width: 50%;
+      text-align: center;
+      font-size: 128px;
+    }
+
+    .fas{
+      font-weight: 900;
+    }
+
     .team-member-avatar{
       max-width: 100px !important;
     }
@@ -75,6 +97,10 @@
       margin-block-end: 0.83em;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column; 
+      text-align: center; 
     }
 
     /* 見出しのスタイル */
@@ -98,6 +124,12 @@
       margin-inline-end: 0px;
       font-weight: bold;
       unicode-bidi: isolate;
+    }
+
+    h5{
+      font-size: 24px;
+      margin: 15px 0 10px;
+      color: #6e99b9;
     }
 
     .about-team {
@@ -143,6 +175,13 @@
       margin: 0 auto;
     }
 
+    .row-content-warp{
+      width: 1000px;
+      max-width: 100%;
+      padding: 0px 15px;
+      margin: 0 auto;
+    }
+
     p{
       display: block;
       margin-block-start: 1em;
@@ -157,25 +196,10 @@
       text-indent: -1em;
     }
 
-    ul{
-      list-style: none;
-    }
-    li{
-      text-indent: -1em;
-      padding-left: 1em;
-    }
-    li::before {
-      content: '・';
-    }
-
-    dd{
+    .u-clear:after, .grid:after{
+      content: "";
       display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      unicode-bidi: isolate;
-      padding-left: 1em;
+      clear: both;
     }
 
     
@@ -199,32 +223,72 @@
   </div>
 
   <div class="row-content">
-    <h2>私たちは</h2>
-    <p class="indent">福岡デザイン＆テクノロジー専門学校のスーパークリエーター科クラウドゲーム専攻のチーム制作プロジェクトチーム「ggg-alpha」です。</p>
-
     <h2>Poccoとは？</h2>
     <p class="indent">「Pocco」とは、私たちが開発している未来のテキスト・音声会話ツールアプリケーションです。<br>Poccoでは以下の機能が利用できます！</p>
 
-    <ul>
-      <li>ベーシックなチャット機能（開発中）</li>
-        <dd>皆さんが想像するようなテキストや音声での会話をすることができます。</dd>
+    <div class="row-content-warp">
+  <div class="u-clear">
+    <div class="grid-element mod-4 mod-padding">
+      <div class="bigicon mod-4">
+        <div class="bigicon-icon">
+          <img src="https://www.svgrepo.com/show/486980/pen-tool.svg" width="100" height="100" class="fas">
 
-      <li>AIによる通知の整理（開発予定）</li>
-        <dd>「夜の通知を朝にまとめて」や「自分に関連するものだけ通知して」などを設定できます。</dd>
+        </div>
+        <div class="bigicon-text">
+          <h5>ベーシックなチャット機能（開発中）</h5>
+          皆さんが想像するようなテキストや音声での会話をすることができます。
+        </div>
+      </div>
+    </div>
 
-      <li>組み込みのオフィスアプリ（開発予定）</li>
-        <dd>表計算やホワイトボード、カレンダーなどを利用できます。</dd>
+    <div class="grid-element mod-4 mod-padding">
+        <div class="bigicon mod-4">
+          <div class="bigicon-text">
+            <h5>AIによる通知の整理（開発予定）</h5>
+            「夜の通知を朝にまとめて」や「自分に関連するものだけ通知して」などを設定できます。
+          </div>
+        </div>
+    </div>
 
-      <li>組み込みのカレンダー、看板、ガントチャート（開発予定）</li>
-       <dd>組織内でイベントやマイルストーンを共有することができます。</dd>
+    <div class="grid-element mod-4 mod-padding">
+      <div class="bigicon mod-4">
+        <div class="bigicon-text">
+          <h5>組み込みのオフィスアプリ（開発予定）</h5>
+          表計算やホワイトボード、カレンダーなどを利用できます。
+        </div>
+      </div>
+    </div>
+    </div>
 
-      <li>組織と連携したソーシャル機能（開発予定）</li>
-       <dd>組織が運営することのできるソーシャルネットワークプラットフォームが組み込まれています！</dd>
+    <div class="u-clear">
+    <div class="grid-element mod-4 mod-padding">
+      <div class="bigicon mod-4">
+        <div class="bigicon-text">
+          <h5>組み込みのカレンダー、看板、ガントチャート（開発予定）</h5>
+          組織内でイベントやマイルストーンを共有することができます。
+        </div>
+      </div>
+    </div>
 
-      <li>オープンなコミュニティ（開発予定）</li>
-       <dd>設定によってあなたの組織をオープンなコミュニティにすることができます</dd>
+    <div class="grid-element mod-4 mod-padding">
+      <div class="bigicon mod-4">
+        <div class="bigicon-text">
+          <h5>組織と連携したソーシャル機能（開発予定）</h5>
+          組織が運営することのできるソーシャルネットワークプラットフォームが組み込まれています！
+        </div>
+      </div>
+    </div>
 
-    </ul>
+    <div class="grid-element mod-4 mod-padding">
+      <div class="bigicon mod-4">
+        <div class="bigicon-text">
+          <h5>オープンなコミュニティ（開発予定）</h5>
+          設定によってあなたの組織をオープンなコミュニティにすることができます。
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   </div>
 
 <div class="row-content">
@@ -273,6 +337,10 @@
     </div>
 
   </div>
+</div>
+<div class="row-content">
+  <h2>私たちは</h2>
+    <p class="indent">福岡デザイン＆テクノロジー専門学校のスーパークリエーター科クラウドゲーム専攻のチーム制作プロジェクトチーム「ggg-alpha」です。</p>  
 </div>
 </body>
 </html>
