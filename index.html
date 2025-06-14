@@ -2,27 +2,277 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About us</title>
+
+  <title>ggg-alpha</title>
   <style>
-    /* 画面全体をフレックスコンテナにして中央揃え */
+    /* ページ全体の初期設定 */
     body {
-      margin: 0;
-      height: 100vh;
+      margin: 0; 
+      height: 100vh; 
+      font-family: sans-serif; 
+      position: relative; 
+    }
+
+    *{
+      font-family: Play, sans-serif;
+      box-sizing: border-box;
+    }
+
+    div{
+      display: block;
+      unicode-bidi: isolate;
+    }
+
+    .grid-element{
+      float: left;
+    }
+
+    .grid-element.mod-4{
+      width: 33.33333%;
+    }
+
+    .grid-element.mod-8{
+      width: 66.66667%;
+    }
+
+    .team-member-avatar{
+      max-width: 100px !important;
+    }
+
+    .team-member-text{
+      padding-left: 15px;
+    }
+
+    /* 左上のアイコン画像のスタイル */
+    .icon {
+      position: absolute; 
+      top: 10px; 
+      left: 10px; 
+      width: 150px;
+      height: 150px;
+    }
+    
+    .bgcolor{
+      background-color: #fffafa00;
+    }
+
+    /* 中央配置用のコンテナ */
+    .center {
+      height: 100%; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column; 
+      text-align: center; 
+    }
+
+    h2{
+      font-size: 34px;
+      font-weight: bold;
+      margin: 10px 0 15px;
+      display: block;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    /* 見出しのスタイル */
+    h3 {
+      font-size: 4em; /* 大きな文字サイズ */
+      margin: 0; /* デフォルトの余白をなくす */
+    }
+
+    h4{
+      font-size: 24px;
+      margin: 15px 0 10px;
+      color: #6e99b9;
+    }
+
+    h4{
+      display: block;
+      font-size: 1.17em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+    }
+
+    .about-team {
+      font-size: 1.8em; 
+      margin-top: 10px; 
+      font-weight: bold; 
+    }
+
+    /* メンバー一覧全体のスタイル */
+    .members {
       display: flex;
-      justify-content: center; /* 横方向中央揃え */
-      align-items: center;     /* 縦方向中央揃え */
-      background-color: #f8f9fa; /* お好みで背景色を設定 */
-      font-family: sans-serif;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    h1 {
-      font-size: 3rem;     /* お好みで文字サイズを調整 */
-      color: #333;         /* お好みで文字色を調整 */
+
+    /* 各メンバーのコンテナ */
+    .member {
+      display: flex; 
+      flex-direction: row;
+      flex-grow: 0;
+      align-items: center;
+      width: 33.333333%; 
+      margin-bottom: 20px;
     }
+
+    .member-text-name{
+      margin: 0 0 5px;
+      color: #6e99b9;
+      font-size: 26px;
+    }
+
+    /* メンバーの画像スタイル */
+    .member img {
+      border: 3px solid #a7d1f4;
+      width: 100%;
+      height: 100%;
+    }
+
+    .row-content{
+      width: 1140px;
+      max-width: 100%;
+      padding: 0px 15px;
+      margin: 0 auto;
+    }
+
+    p{
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+    }
+    
+    .indent{
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    ul{
+      list-style: none;
+    }
+    li{
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+    li::before {
+      content: '・';
+    }
+
+    dd{
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+      padding-left: 1em;
+    }
+
+    
   </style>
 </head>
 <body>
-  <!-- ここを組織名に書き換えてください -->
-  <h1>ggg-alpha</h1>
+
+  <!-- 左上のアイコン画像-->
+  <img src="https://media.discordapp.net/attachments/1376347793656119407/1376349166099370066/A_transparent_1.png?ex=683b980c&is=683a468c&hm=2b44c350bd6a3c559700103623287b9086a8e3a2cf79149d05c091d6113b3c5e&=&format=webp&quality=lossless&width=693&height=693" 
+  alt="アイコン" class="icon bgcolor">
+  
+
+  <!-- 中央コンテンツ -->
+  <div class="center">
+
+    <!-- メイン見出し -->
+    <h3>Poccoを通じて<br>会話の拡張性を構築する</h3>
+
+    <div class="about-team">ggg-alpha</div>
+
+  </div>
+
+  <div class="row-content">
+    <h2>私たちは</h2>
+    <p class="indent">福岡デザイン＆テクノロジー専門学校のスーパークリエーター科クラウドゲーム専攻のチーム制作プロジェクトチーム「ggg-alpha」です。</p>
+
+    <h2>Poccoとは？</h2>
+    <p class="indent">「Pocco」とは、私たちが開発している未来のテキスト・音声会話ツールアプリケーションです。<br>Poccoでは以下の機能が利用できます！</p>
+
+    <ul>
+      <li>ベーシックなチャット機能（開発中）</li>
+        <dd>皆さんが想像するようなテキストや音声での会話をすることができます。</dd>
+
+      <li>AIによる通知の整理（開発予定）</li>
+        <dd>「夜の通知を朝にまとめて」や「自分に関連するものだけ通知して」などを設定できます。</dd>
+
+      <li>組み込みのオフィスアプリ（開発予定）</li>
+        <dd>表計算やホワイトボード、カレンダーなどを利用できます。</dd>
+
+      <li>組み込みのカレンダー、看板、ガントチャート（開発予定）</li>
+       <dd>組織内でイベントやマイルストーンを共有することができます。</dd>
+
+      <li>組織と連携したソーシャル機能（開発予定）</li>
+       <dd>組織が運営することのできるソーシャルネットワークプラットフォームが組み込まれています！</dd>
+
+      <li>オープンなコミュニティ（開発予定）</li>
+       <dd>設定によってあなたの組織をオープンなコミュニティにすることができます</dd>
+
+    </ul>
+  </div>
+
+<div class="row-content">
+  <h2>開発チーム</h2>
+  <!-- メンバー一覧 -->
+  <div class="members">
+
+    <!-- メンバー1 -->
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="山田 太郎">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">山田 太郎</h4>
+      </div>
+    </div>
+
+    <!-- メンバー2 -->
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="佐藤 花子">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">佐藤 花子</h4>
+      </div>
+    </div>
+
+    <!-- メンバー3 -->
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="鈴木 一郎">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">鈴木 一郎</h4>
+      </div>
+    </div>
+
+    <!-- メンバー4 -->
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="中村 二郎">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">中村 二郎</h4>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
 </html>
