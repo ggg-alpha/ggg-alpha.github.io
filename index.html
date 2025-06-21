@@ -2,8 +2,12 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>ggg-alpha</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
   <style>
     /* ページ全体の初期設定 */
     body {
@@ -11,6 +15,7 @@
       height: 100vh; 
       font-family: sans-serif; 
       position: relative; 
+      background-color: #215a6b;
     }
 
     *{
@@ -48,7 +53,7 @@
     }
 
     .bigicon-icon{
-      width: 50%;
+      width: 100%;
       text-align: center;
       font-size: 128px;
     }
@@ -101,18 +106,20 @@
       align-items: center; 
       flex-direction: column; 
       text-align: center; 
+      color: #5ad5b1;
     }
 
     /* 見出しのスタイル */
     h3 {
-      font-size: 4em; /* 大きな文字サイズ */
-      margin: 0; /* デフォルトの余白をなくす */
+      font-size: 4em;
+      margin: 0; 
+      color: #5ad5b1;
     }
 
     h4{
       font-size: 24px;
       margin: 15px 0 10px;
-      color: #6e99b9;
+      color: #5ad5b1;
     }
 
     h4{
@@ -129,13 +136,14 @@
     h5{
       font-size: 24px;
       margin: 15px 0 10px;
-      color: #6e99b9;
+      color: #5ad5b1;
     }
 
     .about-team {
       font-size: 1.8em; 
       margin-top: 10px; 
       font-weight: bold; 
+      color: #ffffff;
     }
 
     /* メンバー一覧全体のスタイル */
@@ -157,7 +165,7 @@
 
     .member-text-name{
       margin: 0 0 5px;
-      color: #6e99b9;
+      color: #ffffff;
       font-size: 26px;
     }
 
@@ -189,11 +197,13 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
       unicode-bidi: isolate;
+      color: #ffffff;
     }
     
     .indent{
       padding-left: 1em;
       text-indent: -1em;
+      color: #ffffff;
     }
 
     .u-clear:after, .grid:after{
@@ -202,18 +212,23 @@
       clear: both;
     }
 
-    
+    .bi{
+      color: #a7d1f4;
+    }
+
   </style>
 </head>
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
   <!-- 左上のアイコン画像-->
-  <img src="https://media.discordapp.net/attachments/1376347793656119407/1376349166099370066/A_transparent_1.png?ex=683b980c&is=683a468c&hm=2b44c350bd6a3c559700103623287b9086a8e3a2cf79149d05c091d6113b3c5e&=&format=webp&quality=lossless&width=693&height=693" 
+  <img src="images/team-icon.png"
   alt="アイコン" class="icon bgcolor">
   
 
   <!-- 中央コンテンツ -->
   <div class="center">
+    
 
     <!-- メイン見出し -->
     <h3>Poccoを通じて<br>会話の拡張性を構築する</h3>
@@ -231,30 +246,44 @@
     <div class="grid-element mod-4 mod-padding">
       <div class="bigicon mod-4">
         <div class="bigicon-icon">
-          <img src="https://www.svgrepo.com/show/486980/pen-tool.svg" width="100" height="100" class="fas">
-
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg>
         </div>
         <div class="bigicon-text">
           <h5>ベーシックなチャット機能（開発中）</h5>
-          皆さんが想像するようなテキストや音声での会話をすることができます。
+          <p>皆さんが想像するようなテキストや音声での会話をすることができます。</p>
         </div>
       </div>
     </div>
 
     <div class="grid-element mod-4 mod-padding">
         <div class="bigicon mod-4">
+          <div class="bigicon-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
+              <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+              <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+            </svg>
+          </div>
           <div class="bigicon-text">
             <h5>AIによる通知の整理（開発予定）</h5>
-            「夜の通知を朝にまとめて」や「自分に関連するものだけ通知して」などを設定できます。
+            <p>「夜の通知を朝にまとめて」や「自分に関連するものだけ通知して」などを設定できます。</p>
           </div>
         </div>
     </div>
 
     <div class="grid-element mod-4 mod-padding">
       <div class="bigicon mod-4">
+        <div class="bigicon-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-calculator" viewBox="0 0 16 16">
+            <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
         <div class="bigicon-text">
           <h5>組み込みのオフィスアプリ（開発予定）</h5>
-          表計算やホワイトボード、カレンダーなどを利用できます。
+          <p>表計算やホワイトボード、カレンダーなどを利用できます。</p>
         </div>
       </div>
     </div>
@@ -263,27 +292,43 @@
     <div class="u-clear">
     <div class="grid-element mod-4 mod-padding">
       <div class="bigicon mod-4">
+        <div class="bigicon-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+          </svg>
+        </div>
         <div class="bigicon-text">
           <h5>組み込みのカレンダー、看板、ガントチャート（開発予定）</h5>
-          組織内でイベントやマイルストーンを共有することができます。
+          <p>組織内でイベントやマイルストーンを共有することができます。</p>
         </div>
       </div>
     </div>
 
     <div class="grid-element mod-4 mod-padding">
       <div class="bigicon mod-4">
+        <div class="bigicon-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+          </svg>
+        </div>
         <div class="bigicon-text">
           <h5>組織と連携したソーシャル機能（開発予定）</h5>
-          組織が運営することのできるソーシャルネットワークプラットフォームが組み込まれています！
+          <p>組織が運営することのできるソーシャルネットワークプラットフォームが組み込まれています！</p>
         </div>
       </div>
     </div>
 
     <div class="grid-element mod-4 mod-padding">
       <div class="bigicon mod-4">
+        <div class="bigicon-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+          </svg>
+        </div>
         <div class="bigicon-text">
           <h5>オープンなコミュニティ（開発予定）</h5>
-          設定によってあなたの組織をオープンなコミュニティにすることができます。
+          <p>設定によってあなたの組織をオープンなコミュニティにすることができます。</p>
         </div>
       </div>
     </div>
@@ -299,40 +344,85 @@
     <!-- メンバー1 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="山田 太郎">
+      <img src="https://placehold.jp/150x150.png" alt="Hoex Own">
       </div>
       <div class="team-member-text grid-element mod-8">
-        <h4 class="member-text-name">山田 太郎</h4>
+        <h4 class="member-text-name">Hoex Own</h4>
       </div>
     </div>
 
     <!-- メンバー2 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="佐藤 花子">
+      <img src="https://placehold.jp/150x150.png" alt="Thing Jazzy">
       </div>
       <div class="team-member-text grid-element mod-8">
-        <h4 class="member-text-name">佐藤 花子</h4>
+        <h4 class="member-text-name">Thing Jazzy</h4>
       </div>
     </div>
 
     <!-- メンバー3 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="鈴木 一郎">
+      <img src="https://placehold.jp/150x150.png" alt="Scam Honey">
       </div>
       <div class="team-member-text grid-element mod-8">
-        <h4 class="member-text-name">鈴木 一郎</h4>
+        <h4 class="member-text-name">Scam Honey</h4>
       </div>
     </div>
 
     <!-- メンバー4 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="中村 二郎">
+      <img src="https://placehold.jp/150x150.png" alt="Apples Limp">
       </div>
       <div class="team-member-text grid-element mod-8">
-        <h4 class="member-text-name">中村 二郎</h4>
+        <h4 class="member-text-name">Apples Limp</h4>
+      </div>
+    </div>
+
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="Net Opine">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">Net Opine</h4>
+      </div>
+    </div>
+
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="Berry Grass">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">Berry Grass</h4>
+      </div>
+    </div>
+
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="Illegal Front">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">Illegal Front</h4>
+      </div>
+    </div>
+
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="Hospitable Study">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">Hospitable Study</h4>
+      </div>
+    </div>
+
+    <div class="member grid-element">
+      <div class="team-member-avatar grid-element mod-4">
+      <img src="https://placehold.jp/150x150.png" alt="Passenger Icicle">
+      </div>
+      <div class="team-member-text grid-element mod-8">
+        <h4 class="member-text-name">Passenger Icicle</h4>
       </div>
     </div>
 
