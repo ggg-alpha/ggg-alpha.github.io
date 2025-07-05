@@ -18,6 +18,16 @@
       background-color: #215a6b;
     }
 
+    img{
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }
+
+    .row{
+      width: 100%;
+      padding: 45px 0px;
+    }
+
     *{
       font-family: Play, sans-serif;
       box-sizing: border-box;
@@ -65,6 +75,7 @@
     .team-member-avatar{
       max-width: 100px !important;
     }
+
 
     .team-member-text{
       padding-left: 15px;
@@ -170,7 +181,7 @@
     }
 
     /* メンバーの画像スタイル */
-    .member img {
+    .member-img {
       border: 3px solid #a7d1f4;
       width: 100%;
       height: 100%;
@@ -214,6 +225,60 @@
 
     .bi{
       color: #a7d1f4;
+    }
+
+    @media screen and (max-width: 480px) {
+      .bigicon-icon{
+        display: none;
+      }
+
+      .row-content{
+        padding: 0px 10px;
+      }
+
+      .grid-element{
+        width: 100px !important;
+      }
+
+      .row{
+        padding: 15px 0px;
+      }
+
+      .members{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .member{
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .member-text-name{
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        float: none;
+      }
+
+      .row-content-warp{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        float: none;
+      }
+      
+      .grid-element.mod-padding{
+        align-items: center;
+        justify-content: center;
+      }
+
     }
 
   </style>
@@ -336,7 +401,7 @@
   </div>
   </div>
 
-<div class="row-content">
+<div class="row row-content">
   <h2>開発チーム</h2>
   <!-- メンバー一覧 -->
   <div class="members">
@@ -344,7 +409,7 @@
     <!-- メンバー1 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Hoex Own">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Hoex Own">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Hoex Own</h4>
@@ -354,7 +419,7 @@
     <!-- メンバー2 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Thing Jazzy">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Thing Jazzy">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Thing Jazzy</h4>
@@ -364,7 +429,7 @@
     <!-- メンバー3 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Scam Honey">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Scam Honey">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Scam Honey</h4>
@@ -374,7 +439,7 @@
     <!-- メンバー4 -->
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Apples Limp">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Apples Limp">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Apples Limp</h4>
@@ -383,7 +448,7 @@
 
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Net Opine">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Net Opine">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Net Opine</h4>
@@ -392,7 +457,7 @@
 
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Berry Grass">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Berry Grass">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Berry Grass</h4>
@@ -401,7 +466,7 @@
 
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Illegal Front">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Illegal Front">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Illegal Front</h4>
@@ -410,7 +475,7 @@
 
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Hospitable Study">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Hospitable Study">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Hospitable Study</h4>
@@ -419,7 +484,7 @@
 
     <div class="member grid-element">
       <div class="team-member-avatar grid-element mod-4">
-      <img src="https://placehold.jp/150x150.png" alt="Passenger Icicle">
+      <img src="https://placehold.jp/150x150.png" class="member-img" alt="Passenger Icicle">
       </div>
       <div class="team-member-text grid-element mod-8">
         <h4 class="member-text-name">Passenger Icicle</h4>
